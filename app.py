@@ -20,8 +20,8 @@ st.write("Predict anemia type using blood test parameters")
 # ======================
 @st.cache_resource
 def load_model():
-    model = joblib.load("/content/anemia_pipeline.pkl")
-    le = joblib.load("/content/label_encoder.pkl")
+    model = joblib.load("anemia_pipeline.pkl")
+    le = joblib.load("label_encoder.pkl")
     return model, le
 
 model, le = load_model()
